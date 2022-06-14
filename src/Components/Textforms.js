@@ -94,22 +94,22 @@ const Textforms = (props) => {
                 <textarea style={{backgroundColor:props.mode==='dark'?"rgb(54, 69, 79)":"white",color:props.mode==='dark'?"white":"black"}} className="form-control" value={text} onChange={convertOnChange} id="myBox" rows="10"></textarea>
             </div>
 
-            <button className='btn btn-primary mx-2' onClick={convertUp} >
+            <button className='btn btn-primary mx-2  ' onClick={convertUp} >
                 Convert To UpperCase
             </button>
-            <button className='btn btn-primary mx-2' onClick={convertLow}>
+            <button className='btn btn-primary mx-2  ' onClick={convertLow}>
                 Convert To LowerCase
             </button>
-            <button className='btn btn-primary mx-2' onClick={convertTitleCase}>
+            <button className='btn btn-primary mx-2 ' onClick={convertTitleCase}>
                 Convert To  Title Case
             </button>
-            <button className='btn btn-primary mx-2' onClick={handleExtraspace}>
+            <button className='btn btn-primary mx-2  ' onClick={handleExtraspace}>
                 Remove Extra Space
             </button>
-            <button className='btn btn-primary mx-2' onClick={handleCopy}>
+            <button className='btn btn-primary mx-2  ' onClick={handleCopy}>
                 Copy
             </button>
-            <button className='btn btn-primary mx-2' onClick={speak}>
+            <button className='btn btn-primary mx-2 my-1' onClick={speak}>
                 Speak
             </button>
             <button className='btn btn-primary' onClick={clear}>

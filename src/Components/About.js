@@ -1,7 +1,7 @@
 
 import React , {useState} from 'react'
 
-const About = () => {
+const About = (props) => {
     const [myStyle,setmyStyle]=useState( {})
     const [btnText,setbtnText]=useState("Enable Dark Mode")
     const [btnStyle,setbtnStyle]=useState({})
@@ -13,14 +13,14 @@ const About = () => {
             })
             setbtnStyle({
                 color:'white',
-                backgroundColor:'black'
+                backgroundColor:'rgb(54, 69, 79)'
             })
             setbtnText("Enable Dark Mode")
         }
         else{
             setmyStyle({
                 color:'white',
-                backgroundColor:'black',
+                backgroundColor:'rgb(54, 69, 79)',
                 border: '1px solid white'
             })
             setbtnStyle({
@@ -74,7 +74,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='container my-3'>
-                <button type="button" class="btn btn-secondary" onClick={toggleStyle} style={btnStyle}>{btnText}</button>
+                <button type="button" className="btn btn-secondary" onClick={toggleStyle} style={btnStyle}>{btnText}</button>
                 </div>
             </div>
         </>
