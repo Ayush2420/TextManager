@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ayush2420/TextManager.git/static/css/main.073c9b0a.css",
+    "main.js": "/Ayush2420/TextManager.git/static/js/main.9200b345.js",
+    "static/js/787.142da1d4.chunk.js": "/Ayush2420/TextManager.git/static/js/787.142da1d4.chunk.js",
+    "index.html": "/Ayush2420/TextManager.git/index.html",
+    "main.073c9b0a.css.map": "/Ayush2420/TextManager.git/static/css/main.073c9b0a.css.map",
+    "main.9200b345.js.map": "/Ayush2420/TextManager.git/static/js/main.9200b345.js.map",
+    "787.142da1d4.chunk.js.map": "/Ayush2420/TextManager.git/static/js/787.142da1d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9200b345.js"
+  ]
+}
