@@ -5,13 +5,7 @@ import Navbar from './Components/Navbar';
 import Textforms from './Components/Textforms';
 import About from './Components/About'
 import Alert from './Components/Alert';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-
+ 
 function App() {
   const [alert, setAlert] = useState(null)
   const showAlert = (massage, type) => {
@@ -42,21 +36,20 @@ function App() {
   }
   return (
     <>
-      <Router>
+       
         
             <Navbar tittle="TextManager" mode={darkmode} toggleMode={toggleMode} textMode={textMode} />
             <Alert alert={alert} />
               <div className='container '>
-          <Routes>
-            <Route exact path="/" element={<Textforms showAlert={showAlert} mode={darkmode} heading="Enter the text to analyze" />}>
-            </Route>
-            <Route exact path="/about" element={<About mode={darkmode}/>}>
-            </Route>
-            {/* <About/> */}
-          </Routes>
+          
+             <Textforms showAlert={showAlert} mode={darkmode} heading="Enter the text to analyze" />
+         
+            
+            {/* <About mode={darkmode}/> */}
+           
               </div>
         
-      </Router>
+      
 
     </>
   );
